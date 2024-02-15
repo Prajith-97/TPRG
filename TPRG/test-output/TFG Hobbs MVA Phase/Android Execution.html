@@ -1,0 +1,198 @@
+<html>
+<head>
+<title>TestNG:  Android Execution</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Android Execution</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 04 10:27:09 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>53 seconds (53122 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Land on Home page", "BurgerNavValidation_UK"<br/>
+<a href="#Output-655180711" onClick='toggleBox("Output-655180711", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-655180711" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-655180711">
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: chrome not reachable
+  (Session info: chrome=102.0.5005.125)
+  (Driver info: chromedriver=102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}),platform=Linux 4.4.0-186-generic x86_64)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'EC2AMAZ-C4MGU7T', ip: '172.28.16.1', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [01b19f38-a550-4f78-be15-e787d0c1597b, get {url=https://www.hobbs.com/}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {automationName: uiautomator2, browserName: chrome, deviceName: 425, goog:chromeOptions: {args: [], extensions: [], w3c: false}, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: tprqb2mvkp4bhj4z2nmpwndr, pCloudy_DeviceManufacturer: SAMSUNG, pCloudy_DeviceVersion: 11.0.0, pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: true, pCloudy_EnableVideo: false, pCloudy_Username: itsupport@g10x.com, pCloudy_WildNet: false, platformName: android, platformVersion: 11.0.0, systemPort: 30214}, appium:deviceApiLevel: 30, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N975U, appium:deviceName: RF8M818JG7Z, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3040, appium:deviceUDID: RF8M818JG7Z, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: tprqb2mvkp4bhj4z2nmpwndr, appium:pCloudy_DeviceManufacturer: SAMSUNG, appium:pCloudy_DeviceVersion: 11.0.0, appium:pCloudy_DurationInMinutes: 10, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: true, appium:pCloudy_EnableVideo: false, appium:pCloudy_Username: itsupport@g10x.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 114, appium:systemPort: 30214, appium:takesScreenshot: true, appium:viewportRect: {height: 2645, left: 0, top: 114, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: false}, platformName: android}
+Session ID: 01b19f38-a550-4f78-be15-e787d0c1597b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at utility.WebDriverManagerAppium.setUpSuiteAndriod(WebDriverManagerAppium.java:80)
+	at stepdefs.HomePageStepDefinition.website_HOBBS_url_is_launched_for_in(HomePageStepDefinition.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:124)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: pCloudy device connection failed. expected [true] but found [false]
+	at stepdefs.HomePageStepDefinition.website_HOBBS_url_is_launched_for_in(HomePageStepDefinition.java:82)
+	at ?.website HOBBS url is launched for &quot;UK&quot; in &quot;Mobile&quot;(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/P2_ALL_MOBILE_NAVIGATION_UK.feature:7)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace655180711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace655180711'><pre>java.lang.AssertionError: pCloudy device connection failed. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at stepdefs.HomePageStepDefinition.website_HOBBS_url_is_launched_for_in(HomePageStepDefinition.java:82)
+	at ?.website HOBBS url is launched for &quot;UK&quot; in &quot;Mobile&quot;(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/P2_ALL_MOBILE_NAVIGATION_UK.feature:7)
+</pre></div></td>
+<td>51</td>
+<td>runner.RunTestNGTest@239a307b</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Tap on burger nav", "BurgerNavValidation_UK"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.HomePageStepDefinition.user_clicks_on_burger_menu(HomePageStepDefinition.java:392)
+	at ?.user clicks on burger menu(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/P2_ALL_MOBILE_NAVIGATION_UK.feature:13)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace584866226", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace584866226'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.HomePageStepDefinition.user_clicks_on_burger_menu(HomePageStepDefinition.java:392)
+	at ?.user clicks on burger menu(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/P2_ALL_MOBILE_NAVIGATION_UK.feature:13)
+</pre></div></td>
+<td>0</td>
+<td>runner.RunTestNGTest@239a307b</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Close burger nav", "BurgerNavValidation_UK"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.HomePageStepDefinition.user_clicks_on_X_close_button(HomePageStepDefinition.java:902)
+	at ?.user clicks on X close button(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/P2_ALL_MOBILE_NAVIGATION_UK.feature:18)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace876864630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace876864630'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.HomePageStepDefinition.user_clicks_on_X_close_button(HomePageStepDefinition.java:902)
+	at ?.user clicks on X close button(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/P2_ALL_MOBILE_NAVIGATION_UK.feature:18)
+</pre></div></td>
+<td>0</td>
+<td>runner.RunTestNGTest@239a307b</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,950 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="" dir="ltr">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test Execution Report</title>
+    <meta name="description" content="G10X Report Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+
+    <!-- For the the chart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- custom css -->
+    <link href="assets/css/Global.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="content">
+        <div class="app">
+            <div class="app__nav">
+                <div class="side-nav">
+                    <div class="side-nav__head">
+                        <div class="row justify-content-center" style="padding:10px;">
+                            <div class="col" style="margin-left: 3px;"><img class="logoimg"
+                                    src="assets/images/g10x_Logo2.png"></div>
+                            <div class="col" style="margin: 0"> <img class="logoimg" src="assets/images/TFG.png"></div>
+                        </div>
+                    </div>
+                    <div class="side-nav__head">
+                        Test Automation Report
+                    </div>
+
+                    <nav class="navbar">
+                        <div id="main-menu" class="main-menu">
+                            <ul class="nav navbar-nav">
+                                <li class="active mainitem" onclick="ShowMainSection('dash')">
+                                    <a><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                                </li>
+                                <li class="menu-title mainitem">Execution Details</li>
+                                <li class="menu-item-has-children dropdown">
+                                    <a class="dropdown-toggle collapsible mainitem"> <i
+                                            class="menu-icon fa fa-cogs"></i>Suites</a>
+                                    <ul class="sub-menu children dropdown-menu">
+                                       <li onclick="ShowMainSection('addproduct_to_basket_checkoutproducts_uk')">
+ <i class="fa fa-list" aria-hidden="true" #></i>
+ <a>AddProduct_to_Basket_CheckoutProducts_UK</a>
+ </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="app__content mainsection" id="dash">
+                <div class="side-by-side">
+                    <div id="dashboard" class="content" style="display: block;">
+                        <div class="animated fadeIn">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="stat-widget-five">
+                                                <div class="stat-icon dib passicon">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                                <div class="stat-content">
+                                                    <div class="text-left dib">
+                                                        <div class="stat-text"><span class="count">0</span></div>
+                                                        <div class="stat-heading">Passed</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="stat-widget-five">
+                                                <div class="stat-icon dib failicon">
+                                                    <i class="fa fa-times"></i>
+                                                </div>
+                                                <div class="stat-content">
+                                                    <div class="text-left dib">
+                                                        <div class="stat-text"><span class="count">1</span></div>
+                                                        <div class="stat-heading">Failed</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="stat-widget-five">
+                                                <div class="stat-icon dib skipicon">
+                                                    <i class="fa fa-ban" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="stat-content">
+                                                    <div class="text-left dib">
+                                                        <div class="stat-text"><span class="count">0</span></div>
+                                                        <div class="stat-heading">Skipped</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div id="piechart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div id="barchart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center journeytable">
+
+                                <div class="status">
+                                    <div class="row justify-content-center">
+                                        <div class="card">
+                                            <div class="card-body box-title">
+                                                <h4>Execution Details</h4>
+                                            </div>
+                                            <div class="card-body--">
+                                                <div class="table-stats status-table ov-h">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr class="tableheadertop">
+                                                                <th class="tableheader" style="width: 5%" colspan="1">#
+                                                                </th>
+                                                                <th class="tableheader" style="width: 5%;" colspan="1">
+                                                                    Customer
+                                                                    Journey</th>
+                                                                <th class="tableheader" style="width: 5%" colspan="3">
+                                                                    Browsers</th>
+                                                                <th class="tableheader"
+                                                                    style="width: 3%;text-align: center;" colspan="2">
+                                                                    Devices</th>
+                                                            </tr>
+                                                            <tr class="tableheaderbottom">
+                                                                <th class="tableheader"></th>
+                                                                <th class="tableheader"></th>
+                                                                <th class="tableheader">Chrome</th>
+                                                                <th class="tableheader">Edge</th>
+                                                                <th class="tableheader">Firefox</th>
+                                                                <th class="tableheader">Android</th>
+                                                                <th class="tableheader">IOS</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                           <tr>
+<td class="serial">1.</td>
+<td class="journeyname"><span  onclick="ShowMainSection('addproduct_to_basket_checkoutproducts_uk')">AddProduct_to_Basket_CheckoutProducts_UK</span></td>
+<td><span><i class="fa fa-times failicon extralarge"></i></span></td>
+<td><span></span></td>
+<td><span></span></td>
+<td><span></span> </td>
+<td><span></span> </td>
+</tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  <div class="app__content mainsection" id="addproduct_to_basket_checkoutproducts_uk" style="display: none;">
+    <div class="side-by-side">
+        <div class="side-by-side__left" style="width: calc(49.8677% - 3.5px);">
+            <div class="journeylist">
+                <h2 class="leftheading">Suites - <em>AddProduct_to_Basket_CheckoutProducts_UK</em></h2>
+                  <div class="chrome">
+                                <button class="collapsible journeytitle"><i class="journeyarrow"></i>
+                                    AddProduct_to_Basket_CheckoutProducts_UK - chrome
+                                      <div class="stat-icon dib failicon">
+                                        <i class="fa fa-times"></i>
+                                    </div>                                </button>
+
+                                <ul class="node__children">
+                                     <li class="node node__leaf AddProduct_to_Basket_CheckoutProducts_UK_chrome_Landonhomepage" style="cursor: pointer;">
+                                        <div class="node__title">
+                                            <div class="node__anchor">
+                                                 <span class="fa fa-fw fa-check-circle "></span>
+                                            </div>
+                                            <div class="node__order">#1</div>
+                                            <div class="node__name">Land on homepage</div>
+                                            <div class="tree__strut">&nbsp;</div>
+                                            <div class="node__stats">21552</div></div>
+                                    </li>   <li class="node node__leaf AddProduct_to_Basket_CheckoutProducts_UK_chrome_VerifyuserredirectedtotheSLPPage" style="cursor: pointer;">
+                                        <div class="node__title">
+                                            <div class="node__anchor">
+                                                 <span class="fa fa-fw fa-check-circle "></span>
+                                            </div>
+                                            <div class="node__order">#2</div>
+                                            <div class="node__name">Verify user redirected to the SLP Page</div>
+                                            <div class="tree__strut">&nbsp;</div>
+                                            <div class="node__stats">13887</div></div>
+                                    </li>   <li class="node node__leaf AddProduct_to_Basket_CheckoutProducts_UK_chrome_Verifyuserabletoaddproducttothebasket" style="cursor: pointer;">
+                                        <div class="node__title">
+                                            <div class="node__anchor">
+                                                 <span class="fa fa-fw fa-check-circle "></span>
+                                            </div>
+                                            <div class="node__order">#3</div>
+                                            <div class="node__name">Verify user able to add product to the basket</div>
+                                            <div class="tree__strut">&nbsp;</div>
+                                            <div class="node__stats">26160</div></div>
+                                    </li>   <li class="node node__leaf AddProduct_to_Basket_CheckoutProducts_UK_chrome_Verifyuserabletoproceedtocheckout" style="cursor: pointer;">
+                                        <div class="node__title">
+                                            <div class="node__anchor">
+                                                 <span class="fa fa-fw fa-check-circle "></span>
+                                            </div>
+                                            <div class="node__order">#4</div>
+                                            <div class="node__name">Verify user able to proceed to checkout</div>
+                                            <div class="tree__strut">&nbsp;</div>
+                                            <div class="node__stats">13777</div></div>
+                                    </li>   <li class="node node__leaf AddProduct_to_Basket_CheckoutProducts_UK_chrome_Verifyuserabletoenterallthedeliverydetails" style="cursor: pointer;">
+                                        <div class="node__title">
+                                            <div class="node__anchor">
+                                                <span class="fa fa-fw fa-times-circle"></span>
+                                            </div>
+                                            <div class="node__order">#5</div>
+                                            <div class="node__name">Verify user able to enter all the delivery details</div>
+                                            <div class="tree__strut">&nbsp;</div>
+                                            <div class="node__stats">18221</div></div>
+                                    </li>
+                                </ul>
+                            </div>
+            </div>
+
+        </div>
+        <div class="gutter gutter-horizontal"></div>
+        <div class="side-by-side__right" style="width: calc(50.1323% - 3.5px);">
+            <div class="journeydetails">
+                <div class="AddProduct_to_Basket_CheckoutProducts_UK">
+                        <div id="AddProduct_to_Basket_CheckoutProducts_UK_chrome_Landonhomepage" class="TCID" style="display: none;">
+        <div class="subtitle long-line line-ellipsis">
+            <span> AddProduct_to_Basket_CheckoutProducts_UK - chrome: Land on homepage</span>
+        </div>
+        <h2 class="pane_title">
+            <div class="test-result_status">
+                <span class="status_label status_PASSED">PASSED</span>
+            </div>
+            <div class="test-result_name">
+                <span class="long-line">Land on homepage</span>
+            </div>
+        </h2>
+
+        <div class="test-result_content">
+            <div class="pane_section">
+                <div class="test-result-overview__tags"><br>
+                    <span class="label label__info">["@DESKTOP_ADDTOBASKET"]</span><span style="margin-right:2px;background:transparent"></span></div>
+                    <div class="pane__section"></div>
+                    <div class="pane__section">Severity: </div>
+                    <div class="pane__section"> <span>
+                            Duration:
+                            <span class="fa fa-clock-o"></span>
+                            21552
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pane__section">
+                    <h3 class="result_section-title">Description</h3>
+                    <div class="description__text">
+                        Verifying empty basket
+                    </div>
+                </div>
+                <div class="pane__section">
+                    <h3 class="result_section-title">Execution</h3>
+                    <div class="panel-heading collapsed" data-toggle="collapse"
+                        data-target="#bar">
+                        <i class="fa fa-fw fa-chevron-down"></i>
+                        <i class="fa fa-fw fa-chevron-right"></i>Test Body
+                    </div>
+                    <div class="panel-body collapse show" id="bar">
+                        <ul id="stepsUL">
+                               <li class="passed">
+   <span class="caret"> Given website RobertDyas url is launched for "UK" in "Desktop"</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175119.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175119.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>   <li class="passed">
+   <span class="caret"> When user accept the cookies</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175125.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175125.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>   <li class="passed">
+   <span class="caret"> Then user is on homepage</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175128.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175128.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="AddProduct_to_Basket_CheckoutProducts_UK_chrome_VerifyuserredirectedtotheSLPPage" class="TCID" style="display: none;">
+        <div class="subtitle long-line line-ellipsis">
+            <span> AddProduct_to_Basket_CheckoutProducts_UK - chrome: Verify user redirected to the SLP Page</span>
+        </div>
+        <h2 class="pane_title">
+            <div class="test-result_status">
+                <span class="status_label status_PASSED">PASSED</span>
+            </div>
+            <div class="test-result_name">
+                <span class="long-line">Verify user redirected to the SLP Page</span>
+            </div>
+        </h2>
+
+        <div class="test-result_content">
+            <div class="pane_section">
+                <div class="test-result-overview__tags"><br>
+                    <span class="label label__info">["@DESKTOP_ADDTOBASKET"]</span><span style="margin-right:2px;background:transparent"></span></div>
+                    <div class="pane__section"></div>
+                    <div class="pane__section">Severity: </div>
+                    <div class="pane__section"> <span>
+                            Duration:
+                            <span class="fa fa-clock-o"></span>
+                            13887
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pane__section">
+                    <h3 class="result_section-title">Description</h3>
+                    <div class="description__text">
+                        Verifying empty basket
+                    </div>
+                </div>
+                <div class="pane__section">
+                    <h3 class="result_section-title">Execution</h3>
+                    <div class="panel-heading collapsed" data-toggle="collapse"
+                        data-target="#bar">
+                        <i class="fa fa-fw fa-chevron-down"></i>
+                        <i class="fa fa-fw fa-chevron-right"></i>Test Body
+                    </div>
+                    <div class="panel-body collapse show" id="bar">
+                        <ul id="stepsUL">
+                               <li class="passed">
+   <span class="caret"> Given user search for a phrase</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175134.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175134.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>   <li class="passed">
+   <span class="caret"> And Press enter key</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175139.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175139.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>   <li class="passed">
+   <span class="caret"> When user redirected to the SLP page</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175142.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175142.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="AddProduct_to_Basket_CheckoutProducts_UK_chrome_Verifyuserabletoaddproducttothebasket" class="TCID" style="display: none;">
+        <div class="subtitle long-line line-ellipsis">
+            <span> AddProduct_to_Basket_CheckoutProducts_UK - chrome: Verify user able to add product to the basket</span>
+        </div>
+        <h2 class="pane_title">
+            <div class="test-result_status">
+                <span class="status_label status_PASSED">PASSED</span>
+            </div>
+            <div class="test-result_name">
+                <span class="long-line">Verify user able to add product to the basket</span>
+            </div>
+        </h2>
+
+        <div class="test-result_content">
+            <div class="pane_section">
+                <div class="test-result-overview__tags"><br>
+                    <span class="label label__info">["@DESKTOP_ADDTOBASKET"]</span><span style="margin-right:2px;background:transparent"></span></div>
+                    <div class="pane__section"></div>
+                    <div class="pane__section">Severity: </div>
+                    <div class="pane__section"> <span>
+                            Duration:
+                            <span class="fa fa-clock-o"></span>
+                            26160
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pane__section">
+                    <h3 class="result_section-title">Description</h3>
+                    <div class="description__text">
+                        Verifying empty basket
+                    </div>
+                </div>
+                <div class="pane__section">
+                    <h3 class="result_section-title">Execution</h3>
+                    <div class="panel-heading collapsed" data-toggle="collapse"
+                        data-target="#bar">
+                        <i class="fa fa-fw fa-chevron-down"></i>
+                        <i class="fa fa-fw fa-chevron-right"></i>Test Body
+                    </div>
+                    <div class="panel-body collapse show" id="bar">
+                        <ul id="stepsUL">
+                               <li class="passed">
+   <span class="caret"> When user select the product from SLP page</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175149.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175149.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>   <li class="passed">
+   <span class="caret"> Then user click on Add to basket button</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175155.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175155.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>   <li class="passed">
+   <span class="caret"> And click on checkout securely button</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175205.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175205.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>   <li class="passed">
+   <span class="caret"> And user redirected to the basket page</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175208.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175208.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="AddProduct_to_Basket_CheckoutProducts_UK_chrome_Verifyuserabletoproceedtocheckout" class="TCID" style="display: none;">
+        <div class="subtitle long-line line-ellipsis">
+            <span> AddProduct_to_Basket_CheckoutProducts_UK - chrome: Verify user able to proceed to checkout</span>
+        </div>
+        <h2 class="pane_title">
+            <div class="test-result_status">
+                <span class="status_label status_PASSED">PASSED</span>
+            </div>
+            <div class="test-result_name">
+                <span class="long-line">Verify user able to proceed to checkout</span>
+            </div>
+        </h2>
+
+        <div class="test-result_content">
+            <div class="pane_section">
+                <div class="test-result-overview__tags"><br>
+                    <span class="label label__info">["@DESKTOP_ADDTOBASKET"]</span><span style="margin-right:2px;background:transparent"></span></div>
+                    <div class="pane__section"></div>
+                    <div class="pane__section">Severity: </div>
+                    <div class="pane__section"> <span>
+                            Duration:
+                            <span class="fa fa-clock-o"></span>
+                            13777
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pane__section">
+                    <h3 class="result_section-title">Description</h3>
+                    <div class="description__text">
+                        Verifying empty basket
+                    </div>
+                </div>
+                <div class="pane__section">
+                    <h3 class="result_section-title">Execution</h3>
+                    <div class="panel-heading collapsed" data-toggle="collapse"
+                        data-target="#bar">
+                        <i class="fa fa-fw fa-chevron-down"></i>
+                        <i class="fa fa-fw fa-chevron-right"></i>Test Body
+                    </div>
+                    <div class="panel-body collapse show" id="bar">
+                        <ul id="stepsUL">
+                               <li class="passed">
+   <span class="caret"> When user click on the checkout securely in the basket page</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175218.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175218.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>   <li class="passed">
+   <span class="caret"> Then user redirected to the checkout page</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175222.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175222.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p></p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="AddProduct_to_Basket_CheckoutProducts_UK_chrome_Verifyuserabletoenterallthedeliverydetails" class="TCID" style="display: none;">
+        <div class="subtitle long-line line-ellipsis">
+            <span> AddProduct_to_Basket_CheckoutProducts_UK - chrome: Verify user able to enter all the delivery details</span>
+        </div>
+        <h2 class="pane_title">
+            <div class="test-result_status">
+                <span class="status_label status_FAILED">FAILED</span>
+            </div>
+            <div class="test-result_name">
+                <span class="long-line">Verify user able to enter all the delivery details</span>
+            </div>
+        </h2>
+
+        <div class="test-result_content">
+            <div class="pane_section">
+                <div class="test-result-overview__tags"><br>
+                    <span class="label label__info">["@DESKTOP_ADDTOBASKET"]</span><span style="margin-right:2px;background:transparent"></span></div>
+                    <div class="pane__section"></div>
+                    <div class="pane__section">Severity: </div>
+                    <div class="pane__section"> <span>
+                            Duration:
+                            <span class="fa fa-clock-o"></span>
+                            18221
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pane__section">
+                    <h3 class="result_section-title">Description</h3>
+                    <div class="description__text">
+                        Verifying empty basket
+                    </div>
+                </div>
+                <div class="pane__section">
+                    <h3 class="result_section-title">Execution</h3>
+                    <div class="panel-heading collapsed" data-toggle="collapse"
+                        data-target="#bar">
+                        <i class="fa fa-fw fa-chevron-down"></i>
+                        <i class="fa fa-fw fa-chevron-right"></i>Test Body
+                    </div>
+                    <div class="panel-body collapse show" id="bar">
+                        <ul id="stepsUL">
+                               <li class="failed">
+   <span class="caret"> When user enter "Parvathy", "RB", "Paru@gmail.com", "8888888888"</span>    <ul class="nested">
+        <li><span class="caret screenshot">Screenshot</span>
+            <ul class="nested">
+                <a class="downloadimg" href="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175240.png" target="blank"
+                    download>
+                    <img src="C:\Users\Parvathy\TPRG\src\test\java\reports\screenshots\20230123175240.png" width="250" height="150"><br>
+                </a>
+            </ul>
+        </li>
+         <li><span class="caret error">Error</span>
+                                                                    <ul class="nested">
+                                                                        <p>element not interactable
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-PIB88O8', ip: '172.16.50.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5b74af0bff532cf651412011d09fcf77, sendKeysToElement {id=460c0a71-48f4-4489-ba99-8a17b3b2b8da, value=[Ljava.lang.CharSequence;@107bfcb2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\PARVAT"1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49572/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5b74af0bff532cf651412011d09fcf77)] -> xpath: (//input[@name="firstname"])[2]]
+Session ID: 5b74af0bff532cf651412011d09fcf77</p>
+                                                                    </ul>
+                                                                </li>
+    </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+
+
+    <script src="assets/js/main.js"></script>
+
+
+    <!-- main section -->
+
+    <script>
+        function ShowMainSection(Divname) {
+            var coll = document.getElementsByClassName("mainsection");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].style.display = 'none';
+            }
+            var x = document.getElementById(Divname);
+            x.style.display = "block";
+        }
+    </script>
+
+
+    <!-- collapsible -->
+
+    <script>
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var details = this.nextElementSibling;
+                if (details.style.display === "block") {
+                    details.style.display = "none";
+                } else {
+                    details.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+
+    <!-- node node__leaf-->
+    <script>
+        var coll = document.getElementsByClassName("node node__leaf");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                var elements = document.getElementsByClassName("node node__leaf active");
+                var n;
+                for (n = 0; n < elements.length; n++) {
+                    var el = elements[n];
+                    el.classList.remove("active");
+                }
+                this.classList.toggle("active");
+
+                var coll = document.getElementsByClassName("TCID");
+                var i;
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].style.display = "none";
+                }
+
+                var class_name = this.classList.toString();;
+                var new_class_name = class_name.replace(/node node__leaf/g, "").trim();
+                new_class_name = new_class_name.replace(/active/g, "").trim();
+                document.getElementById(new_class_name).style.display = "block";
+            });
+        }
+
+    </script>
+
+    <!-- caret -->
+    <script>
+        var toggler = document.getElementsByClassName("caret");
+        var i;
+
+        for (i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function () {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+            });
+        }
+    </script>
+
+    <!-- Column Chart -->
+
+    <script>
+        var StatusValues = ["Skipped", "Failed", "Passed"];
+        var CountValues = [0,1, 0];
+        var PieColors = ["#DDDDDD", "#FF6961", "#00B978"];
+
+        var options = {
+            series: CountValues,
+            labels: StatusValues,
+            chart: {
+                type: 'donut',
+                height: 218,
+                fontFamily: 'proxima_nova_altbold',
+                fontSize: "14px",
+                fontWeight:"normal",
+            },
+            colors: PieColors,
+            title: {
+                text: 'EXECUTION STATUS',
+                align: 'left',
+                color: '#DDDDDD'
+            },
+            plotOptions: {
+                pie: {
+                    startAngle: -90,
+                    endAngle: 90,
+                    offsetY: 10
+                }
+            },
+            grid: {
+                padding: {
+                    bottom: -150,
+                    top: 30
+                }
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                        width: 200
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#piechart"), options);
+        chart.render();
+
+
+    </script>
+
+
+    <!-- semi pie -->
+
+ <script>
+
+        var SerialNums = ['1'];
+        var ChromeValues = ['1' ];
+        var EdgeValues = [];
+        var FirefoxValues = [];
+        var JourneyValues = ['ADDPRODUCT_TO_BASKET_CHECKOUTPRODUCTS_UK'];
+        var barColors = ["#0062B2", "#9F5AB5", "#F05683"];
+
+        // colors: PieColors,
+
+        var options = {
+            series: [{
+                name: 'Chrome',
+                data: ChromeValues,
+                color: "#0062B2"
+            },
+            {
+                name: 'Edge',
+                data: EdgeValues,
+                color: "#9F5AB5"
+            },
+            {
+                name: 'Firefox',
+                data: FirefoxValues,
+                color: "#F05683"
+            }],
+            chart: {
+                type: 'bar',
+                height: 218,
+                fontFamily: 'proxima_nova_altbold',
+                fontSize: "14px",
+                fontWeight:"normal"
+            },
+            title: {
+                text: 'EXECUTION TIME',
+                align: 'left',
+                color: '#DDDDDD'
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '55%',
+                    endingShape: 'rounded'
+                },
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                show: true,
+                width: 2,
+                colors: ['transparent']
+            },
+            xaxis: {
+                categories: SerialNums,
+            },
+            yaxis: {
+                title: {
+                    text: 'Time'
+                }
+            },
+            fill: {
+                opacity: 1
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return val + " seconds"
+                    }
+                },
+				   x: { formatter: function (val) { return JourneyValues[val-1] }}            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#barchart"), options);
+        chart.render();
+
+
+    </script>
+
+
+
+</body>
+
+</html>

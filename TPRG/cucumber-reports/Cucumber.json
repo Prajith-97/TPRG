@@ -1,0 +1,971 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-30T14:06:29.883Z",
+        "before": [
+          {
+            "result": {
+              "duration": 115000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendbeforerjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Land on homepage",
+        "description": "",
+        "id": "addproduct-to-basket-checkoutproducts-uk;land-on-homepage",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.ThreadDeath\r\n\tat java.lang.Thread.stop(Thread.java:858)\r\n\tat stepdefs.reportdefinitions.appendafterjson(reportdefinitions.java:467)\r\n",
+              "duration": 16000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendafterjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Browser driver creation failed. expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat stepdefs.DyasHomeStepDefinitions.websiteRobertDyasUrlIsLaunchedForIn(DyasHomeStepDefinitions.java:107)\r\n\tat ✽.website RobertDyas url is launched for \"UK\" in \"Desktop\"(file:///C:/Users/Parvathy/TPRG/src/test/resources/features/AddProduct_to_Basket_CheckoutProducts_UK.feature:6)\r\n",
+              "duration": 15090000000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "website RobertDyas url is launched for \"UK\" in \"Desktop\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UK\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"Desktop\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefs.DyasHomeStepDefinitions.websiteRobertDyasUrlIsLaunchedForIn(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "error_message": "java.lang.ThreadDeath\r\n\tat java.lang.Thread.stop(Thread.java:858)\r\n\tat stepdefs.reportdefinitions.doSomethingAfterStep(reportdefinitions.java:714)\r\n",
+                  "duration": 1774000000,
+                  "status": "failed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "user is on homepage",
+            "match": {
+              "location": "stepdefs.DyasHomeStepDefinitions.userIsOnHomepage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DESKTOP_AddToBasket"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-30T14:06:47.425Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendbeforerjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Verify user redirected to the SLP Page",
+        "description": "",
+        "id": "addproduct-to-basket-checkoutproducts-uk;verify-user-redirected-to-the-slp-page",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.ThreadDeath\r\n\tat java.lang.Thread.stop(Thread.java:858)\r\n\tat stepdefs.reportdefinitions.appendafterjson(reportdefinitions.java:467)\r\n",
+              "duration": 2000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendafterjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat stepdefs.DyasHomeStepDefinitions.userSearchForAPhrase(DyasHomeStepDefinitions.java:170)\r\n\tat ✽.user search for a phrase(file:///C:/Users/Parvathy/TPRG/src/test/resources/features/AddProduct_to_Basket_CheckoutProducts_UK.feature:11)\r\n",
+              "duration": 4040000000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "user search for a phrase",
+            "match": {
+              "location": "stepdefs.DyasHomeStepDefinitions.userSearchForAPhrase()"
+            },
+            "after": [
+              {
+                "result": {
+                  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.1.3\u0027, revision: \u00277b1ebf28ef\u0027\nSystem info: host: \u0027DESKTOP-PIB88O8\u0027, ip: \u0027172.16.50.221\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_351\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\\Users\\PARVAT~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51366/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:351)\r\n\tat stepdefs.reportdefinitions.doSomethingAfterStep(reportdefinitions.java:615)\r\n",
+                  "duration": 2000000,
+                  "status": "failed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "Press enter key",
+            "match": {
+              "location": "stepdefs.DyasHomeStepDefinitions.pressEnterKey()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "user redirected to the SLP page",
+            "match": {
+              "location": "stepdefs.DyasHomeStepDefinitions.userRedirectedToTheSLPPage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DESKTOP_AddToBasket"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-30T14:06:51.509Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendbeforerjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify user able to add product to the basket",
+        "description": "",
+        "id": "addproduct-to-basket-checkoutproducts-uk;verify-user-able-to-add-product-to-the-basket",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.ThreadDeath\r\n\tat java.lang.Thread.stop(Thread.java:858)\r\n\tat stepdefs.reportdefinitions.appendafterjson(reportdefinitions.java:467)\r\n",
+              "duration": 2000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendafterjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat stepdefs.DyasBasketPageStepDefinitions.userSelectTheProductFromSLPPage(DyasBasketPageStepDefinitions.java:49)\r\n\tat ✽.user select the product from SLP page(file:///C:/Users/Parvathy/TPRG/src/test/resources/features/AddProduct_to_Basket_CheckoutProducts_UK.feature:16)\r\n",
+              "duration": 3044000000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "user select the product from SLP page",
+            "match": {
+              "location": "stepdefs.DyasBasketPageStepDefinitions.userSelectTheProductFromSLPPage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.1.3\u0027, revision: \u00277b1ebf28ef\u0027\nSystem info: host: \u0027DESKTOP-PIB88O8\u0027, ip: \u0027172.16.50.221\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_351\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\\Users\\PARVAT~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51366/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:351)\r\n\tat stepdefs.reportdefinitions.doSomethingAfterStep(reportdefinitions.java:615)\r\n",
+                  "duration": 2000000,
+                  "status": "failed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "user click on Add to basket button",
+            "match": {
+              "location": "stepdefs.DyasBasketPageStepDefinitions.userClickOnAddToBasketButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "click on checkout securely button",
+            "match": {
+              "location": "stepdefs.DyasBasketPageStepDefinitions.clickOnCheckoutSecurelyButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 19,
+            "name": "user redirected to the basket page",
+            "match": {
+              "location": "stepdefs.DyasBasketPageStepDefinitions.userRedirectedToTheBasketPage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DESKTOP_AddToBasket"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-30T14:06:54.588Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendbeforerjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verify user able to proceed to checkout",
+        "description": "",
+        "id": "addproduct-to-basket-checkoutproducts-uk;verify-user-able-to-proceed-to-checkout",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.ThreadDeath\r\n\tat java.lang.Thread.stop(Thread.java:858)\r\n\tat stepdefs.reportdefinitions.appendafterjson(reportdefinitions.java:467)\r\n",
+              "duration": 2000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendafterjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat stepdefs.DyasBasketPageStepDefinitions.userClickOnTheCheckoutSecurelyInTheBasketPage(DyasBasketPageStepDefinitions.java:123)\r\n\tat ✽.user click on the checkout securely in the basket page(file:///C:/Users/Parvathy/TPRG/src/test/resources/features/AddProduct_to_Basket_CheckoutProducts_UK.feature:22)\r\n",
+              "duration": 4012000000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 22,
+            "name": "user click on the checkout securely in the basket page",
+            "match": {
+              "location": "stepdefs.DyasBasketPageStepDefinitions.userClickOnTheCheckoutSecurelyInTheBasketPage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.1.3\u0027, revision: \u00277b1ebf28ef\u0027\nSystem info: host: \u0027DESKTOP-PIB88O8\u0027, ip: \u0027172.16.50.221\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_351\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\\Users\\PARVAT~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51366/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:351)\r\n\tat stepdefs.reportdefinitions.doSomethingAfterStep(reportdefinitions.java:615)\r\n",
+                  "duration": 2000000,
+                  "status": "failed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 23,
+            "name": "user redirected to the checkout page",
+            "match": {
+              "location": "stepdefs.DyasBasketPageStepDefinitions.userRedirectedToTheCheckoutPage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DESKTOP_AddToBasket"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-30T14:06:58.632Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendbeforerjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Verify user able to enter all the delivery details",
+        "description": "",
+        "id": "addproduct-to-basket-checkoutproducts-uk;verify-user-able-to-enter-all-the-delivery-details;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.ThreadDeath\r\n\tat java.lang.Thread.stop(Thread.java:858)\r\n\tat stepdefs.reportdefinitions.appendafterjson(reportdefinitions.java:467)\r\n",
+              "duration": 2000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendafterjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat stepdefs.DyasHomeStepDefinitions.userIsInTheDeliveryToAddressOptionBox(DyasHomeStepDefinitions.java:227)\r\n\tat ✽.user is in the delivery to address option box(file:///C:/Users/Parvathy/TPRG/src/test/resources/features/AddProduct_to_Basket_CheckoutProducts_UK.feature:26)\r\n",
+              "duration": 5022000000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 26,
+            "name": "user is in the delivery to address option box",
+            "match": {
+              "location": "stepdefs.DyasHomeStepDefinitions.userIsInTheDeliveryToAddressOptionBox()"
+            },
+            "after": [
+              {
+                "result": {
+                  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.1.3\u0027, revision: \u00277b1ebf28ef\u0027\nSystem info: host: \u0027DESKTOP-PIB88O8\u0027, ip: \u0027172.16.50.221\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_351\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\\Users\\PARVAT~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51366/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:351)\r\n\tat stepdefs.reportdefinitions.doSomethingAfterStep(reportdefinitions.java:615)\r\n",
+                  "duration": 2000000,
+                  "status": "failed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 27,
+            "name": "user enter \"Parvathy\", \"RB\", \"Paru@gmail.com\", \"8888888888\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Parvathy\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"RB\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Paru@gmail.com\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"8888888888\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefs.DyasHomeStepDefinitions.userEnter(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 28,
+            "name": "enter the address via \"J P  N, Unit A2c, Redlands, Coulsdon, CR5 2HT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"J P  N, Unit A2c, Redlands, Coulsdon, CR5 2HT\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefs.DyasHomeStepDefinitions.enterTheAddressVia(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 29,
+            "name": "select the delivery options",
+            "match": {
+              "location": "stepdefs.DyasHomeStepDefinitions.selectTheDeliveryOptions()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 30,
+            "name": "click on continue to payment button",
+            "match": {
+              "location": "stepdefs.DyasHomeStepDefinitions.clickOnContinueToPaymentButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DESKTOP_AddToBasket"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-30T14:07:03.699Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendbeforerjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 46,
+        "name": "Verify user able to payment using credit card",
+        "description": "",
+        "id": "addproduct-to-basket-checkoutproducts-uk;verify-user-able-to-payment-using-credit-card;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.ThreadDeath\r\n\tat java.lang.Thread.stop(Thread.java:858)\r\n\tat stepdefs.reportdefinitions.appendafterjson(reportdefinitions.java:467)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepdefs.reportdefinitions.appendafterjson(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat stepdefs.DyasHomeStepDefinitions.userIsInThePaymentPage(DyasHomeStepDefinitions.java:343)\r\n\tat ✽.user is in the Payment page(file:///C:/Users/Parvathy/TPRG/src/test/resources/features/AddProduct_to_Basket_CheckoutProducts_UK.feature:38)\r\n",
+              "duration": 2000000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 38,
+            "name": "user is in the Payment page",
+            "match": {
+              "location": "stepdefs.DyasHomeStepDefinitions.userIsInThePaymentPage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.1.3\u0027, revision: \u00277b1ebf28ef\u0027\nSystem info: host: \u0027DESKTOP-PIB88O8\u0027, ip: \u0027172.16.50.221\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_351\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\\Users\\PARVAT~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51366/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:351)\r\n\tat stepdefs.reportdefinitions.doSomethingAfterStep(reportdefinitions.java:615)\r\n",
+                  "duration": 2000000,
+                  "status": "failed"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 39,
+            "name": "user select the payment method credit card",
+            "match": {
+              "location": "stepdefs.DyasHomeStepDefinitions.userSelectThePaymentMethodCreditCard()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 40,
+            "name": "user enter \"4111111111111111\" \"RB\" \"02\" \"23\" \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4111111111111111\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"RB\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"02\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"23\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"123\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefs.DyasHomeStepDefinitions.userEnter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingBeforeStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "line": 41,
+            "name": "clicks on Make payment button",
+            "match": {
+              "location": "stepdefs.DyasHomeStepDefinitions.clicksOnMakePaymentButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefs.reportdefinitions.doSomethingAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DESKTOP_AddToBasket"
+          }
+        ]
+      }
+    ],
+    "name": "AddProduct_to_Basket_CheckoutProducts_UK",
+    "description": "  Verify user able to add product to Basket and proceed to checkout",
+    "id": "addproduct-to-basket-checkoutproducts-uk",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddProduct_to_Basket_CheckoutProducts_UK.feature",
+    "tags": [
+      {
+        "name": "@DESKTOP_AddToBasket",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

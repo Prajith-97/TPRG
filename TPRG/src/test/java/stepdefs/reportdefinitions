@@ -1,0 +1,6 @@
+
+@DESKTOP_JOURNEY_1 @LANDONHOMEPAGE
+Scenario: Land on Home page                              [90m# src/test/resources/features/DESKTOP_JOURNEY_1.feature:6[0m
+  [32mGiven [0m[32mwebsite HOBBS url is launched in "[0m[32m[1mDesktop[0m[32m"[0m       [90m# stepdefs.HomePageStepDefinition.website_hobbs_url_is_launched_in_Desktop(java.lang.String)[0m
+  [32mWhen [0m[32muser closes country selector gateway modal[0m        [90m# stepdefs.HomePageStepDefinition.user_closes_country_selector_gateway_modal()[0m
+  [32mThen [0m[32muser is on home page for website "[0m[32m[1mdev.hobbs.com/[0m[32m"[0m [90m# stepdefs.HomePageStepDefinition.user_is_on_home_page(java.lang.String)[0m

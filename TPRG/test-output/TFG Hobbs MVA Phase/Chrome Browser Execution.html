@@ -1,0 +1,299 @@
+<html>
+<head>
+<title>TestNG:  Chrome Browser Execution</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome Browser Execution</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/12/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 23 04:55:08 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>49 seconds (49945 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Land on Home page", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.HomePageStepDefinition.user_is_on_home_page(HomePageStepDefinition.java:205)
+	at ?.user is on home page for website &quot;AU&quot;(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:10)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace556773329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace556773329'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.HomePageStepDefinition.user_is_on_home_page(HomePageStepDefinition.java:205)
+	at ?.user is on home page for website &quot;AU&quot;(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:10)
+</pre></div></td>
+<td>35</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Product in Homepage and Land on PDP", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.PDPStepDefinition.user_searches_for_product_from_HomePage_and_lands_on_PDP(PDPStepDefinition.java:104)
+	at ?.user searches for product from HomePage and lands on PDP(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:20)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1307540790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1307540790'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.PDPStepDefinition.user_searches_for_product_from_HomePage_and_lands_on_PDP(PDPStepDefinition.java:104)
+	at ?.user searches for product from HomePage and lands on PDP(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:20)
+</pre></div></td>
+<td>0</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select random size on PDP", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.PLPStepDefinition.select_random_size_from_PLP(PLPStepDefinition.java:881)
+	at ?.user selects randon size for the product(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:26)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1340769295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1340769295'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.PLPStepDefinition.select_random_size_from_PLP(PLPStepDefinition.java:881)
+	at ?.user selects randon size for the product(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:26)
+</pre></div></td>
+<td>10</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Go to bag page", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.PDPStepDefinition.user_clicks_on_view_bag(PDPStepDefinition.java:159)
+	at ?.user clicks on view bag(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:31)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1094167216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1094167216'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.PDPStepDefinition.user_clicks_on_view_bag(PDPStepDefinition.java:159)
+	at ?.user clicks on view bag(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:31)
+</pre></div></td>
+<td>1</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on checkout securely", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.BasketStepDefinition.user_clicks_on_check_out_securely_button(BasketStepDefinition.java:57)
+	at ?.user clicks on check out securely button(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:36)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1531506932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1531506932'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.BasketStepDefinition.user_clicks_on_check_out_securely_button(BasketStepDefinition.java:57)
+	at ?.user clicks on check out securely button(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:36)
+</pre></div></td>
+<td>0</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checkout as guest with non-registered email address", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.CheckoutLoginStepDefinition.user_enters_an_email_id_on_check_out_login_page(CheckoutLoginStepDefinition.java:89)
+	at ?.user enters an &lt;EmailID&gt; on check out login page(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:41)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1603213074", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1603213074'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.CheckoutLoginStepDefinition.user_enters_an_email_id_on_check_out_login_page(CheckoutLoginStepDefinition.java:89)
+	at ?.user enters an &lt;EmailID&gt; on check out login page(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:41)
+</pre></div></td>
+<td>0</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter customer details", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.CheckoutDeliveryStepDefinition.user_enters_the_customer_details(CheckoutDeliveryStepDefinition.java:210)
+	at ?.user enters the customer details for &quot;AU&quot;(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:50)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1699873763", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1699873763'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.CheckoutDeliveryStepDefinition.user_enters_the_customer_details(CheckoutDeliveryStepDefinition.java:210)
+	at ?.user enters the customer details for &quot;AU&quot;(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:50)
+</pre></div></td>
+<td>0</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select home delivery", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.CheckoutDeliveryStepDefinition.user_selects_default_delivery_method(CheckoutDeliveryStepDefinition.java:188)
+	at ?.user selects default delivery method(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:58)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace269287960", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace269287960'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.CheckoutDeliveryStepDefinition.user_selects_default_delivery_method(CheckoutDeliveryStepDefinition.java:188)
+	at ?.user selects default delivery method(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:58)
+</pre></div></td>
+<td>0</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Proceed to payment page", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.CheckoutDeliveryStepDefinition.user_clicks_on_continue_to_payment_cta_button(CheckoutDeliveryStepDefinition.java:152)
+	at ?.user clicks on continue to Payment CTA button(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:63)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2002190941", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2002190941'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.CheckoutDeliveryStepDefinition.user_clicks_on_continue_to_payment_cta_button(CheckoutDeliveryStepDefinition.java:152)
+	at ?.user clicks on continue to Payment CTA button(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:63)
+</pre></div></td>
+<td>1</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pay by Card", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.CheckoutPaymentStepDefinition.user_selects_payment_type_payment_method(CheckoutPaymentStepDefinition.java:59)
+	at ?.user selects &lt;PaymentType&gt; payment method(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:68)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace725978326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace725978326'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.CheckoutPaymentStepDefinition.user_selects_payment_type_payment_method(CheckoutPaymentStepDefinition.java:59)
+	at ?.user selects &lt;PaymentType&gt; payment method(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:68)
+</pre></div></td>
+<td>0</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on payment CTA and lands on confirmation page", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepdefs.CheckoutPaymentStepDefinition.user_clicks_on_place_order_and_pay_securely_cta(CheckoutPaymentStepDefinition.java:128)
+	at ?.user clicks on place order and pay securely CTA(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:79)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2101082331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2101082331'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at stepdefs.CheckoutPaymentStepDefinition.user_clicks_on_place_order_and_pay_securely_cta(CheckoutPaymentStepDefinition.java:128)
+	at ?.user clicks on place order and pay securely CTA(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:79)
+</pre></div></td>
+<td>0</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+<tr>
+<td title='runner.RunTestNGTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunTestNGTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Return to HP", "GuestCustomer_NoFilters_PayByCard_AUS"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;EC2AMAZ-C4MGU7T&apos;, ip: &apos;172.28.16.1&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//a[@class=&apos;navbar-header__logo-link&apos;]//img[@class=&apos;logo loading&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57296/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at stepdefs.HomePageStepDefinition.user_clicks_on_brand_logo(HomePageStepDefinition.java:344)
+	at ?.user clicks on brand logo(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1534265514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1534265514'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;EC2AMAZ-C4MGU7T&apos;, ip: &apos;172.28.16.1&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//a[@class=&apos;navbar-header__logo-link&apos;]//img[@class=&apos;logo loading&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57296/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at stepdefs.HomePageStepDefinition.user_clicks_on_brand_logo(HomePageStepDefinition.java:344)
+	at ?.user clicks on brand logo(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:84)
+</pre></div></td>
+<td>0</td>
+<td>runner.RunTestNGTest@1807e3f6</td></tr>
+</table><p>
+</body>
+</html>

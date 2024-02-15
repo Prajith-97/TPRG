@@ -1,0 +1,30 @@
+[ {
+  "features" : [ {
+    "feature" : [ {
+      "FeatureStatus" : "FAILED",
+      "name" : "AddProduct_to_Basket_CheckoutProducts_UK",
+      "description" : "Verifying empty basket",
+      "endtime" : "2023-1-30 19:36:47",
+      "starttime" : "2023-1-30 19:36:30",
+      "scenarios" : [ {
+        "scenario" : {
+          "duration" : 17000,
+          "severity" : "",
+          "name" : "Land on homepage",
+          "steps" : [ {
+            "step" : {
+              "name" : "Given website RobertDyas url is launched for \"UK\" in \"Desktop\"",
+              "screenshot" : "C:\\Users\\Parvathy\\TPRG\\src\\test\\java\\reports\\screenshots\\20230130193645.png",
+              "status" : "Failed",
+              "errorMsg" : "Input must be set"
+            }
+          } ],
+          "tags" : [ "@DESKTOP_AddToBasket" ],
+          "status" : "FAILED"
+        }
+      } ],
+      "platform" : "chrome"
+    } ]
+  } ],
+  "name" : "AddProduct_to_Basket_CheckoutProducts_UK"
+} ]

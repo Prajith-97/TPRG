@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="0" failed="12" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-23T04:55:08 GMT" name="TFG Hobbs MVA Phase" finished-at="2022-08-23T04:55:58 GMT" duration-ms="49945">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-08-23T04:55:08 GMT" name="Chrome Browser Execution" finished-at="2022-08-23T04:55:58 GMT" duration-ms="49945">
+      <class name="runner.RunTestNGTest">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:08 GMT" name="beforesuite" finished-at="2022-08-23T04:55:08 GMT" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method is-config="true" signature="beforetest(java.lang.String)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:08 GMT" name="beforetest" finished-at="2022-08-23T04:55:09 GMT" duration-ms="595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:09 GMT" name="setUpClass" finished-at="2022-08-23T04:55:09 GMT" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:09 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:44 GMT" duration-ms="35748" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Land on Home page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefs.HomePageStepDefinition.user_is_on_home_page(HomePageStepDefinition.java:205)
+at ✽.user is on home page for website "AU"(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:44 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:45 GMT" duration-ms="115" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Product in Homepage and Land on PDP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefs.PDPStepDefinition.user_searches_for_product_from_HomePage_and_lands_on_PDP(PDPStepDefinition.java:104)
+at ✽.user searches for product from HomePage and lands on PDP(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:45 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:55 GMT" duration-ms="10049" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Select random size on PDP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefs.PLPStepDefinition.select_random_size_from_PLP(PLPStepDefinition.java:881)
+at ✽.user selects randon size for the product(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:26)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:55 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:56 GMT" duration-ms="1041" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Go to bag page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefs.PDPStepDefinition.user_clicks_on_view_bag(PDPStepDefinition.java:159)
+at ✽.user clicks on view bag(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:31)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:56 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:56 GMT" duration-ms="52" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Click on checkout securely"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefs.BasketStepDefinition.user_clicks_on_check_out_securely_button(BasketStepDefinition.java:57)
+at ✽.user clicks on check out securely button(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:56 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:56 GMT" duration-ms="70" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Checkout as guest with non-registered email address"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefs.CheckoutLoginStepDefinition.user_enters_an_email_id_on_check_out_login_page(CheckoutLoginStepDefinition.java:89)
+at ✽.user enters an <EmailID> on check out login page(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:56 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:56 GMT" duration-ms="687" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter customer details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefs.CheckoutDeliveryStepDefinition.user_enters_the_customer_details(CheckoutDeliveryStepDefinition.java:210)
+at ✽.user enters the customer details for "AU"(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:50)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:56 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:57 GMT" duration-ms="89" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Select home delivery"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefs.CheckoutDeliveryStepDefinition.user_selects_default_delivery_method(CheckoutDeliveryStepDefinition.java:188)
+at ✽.user selects default delivery method(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:57 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:58 GMT" duration-ms="1036" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Proceed to payment page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefs.CheckoutDeliveryStepDefinition.user_clicks_on_continue_to_payment_cta_button(CheckoutDeliveryStepDefinition.java:152)
+at ✽.user clicks on continue to Payment CTA button(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:63)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:58 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:58 GMT" duration-ms="46" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Pay by Card"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefs.CheckoutPaymentStepDefinition.user_selects_payment_type_payment_method(CheckoutPaymentStepDefinition.java:59)
+at ✽.user selects <PaymentType> payment method(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:58 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:58 GMT" duration-ms="33" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Click on payment CTA and lands on confirmation page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefs.CheckoutPaymentStepDefinition.user_clicks_on_place_order_and_pay_securely_cta(CheckoutPaymentStepDefinition.java:128)
+at ✽.user clicks on place order and pay securely CTA(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:79)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:58 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-23T04:55:58 GMT" duration-ms="63" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Return to HP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GuestCustomer_NoFilters_PayByCard_AUS"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'EC2AMAZ-C4MGU7T', ip: '172.28.16.1', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//a[@class='navbar-header__logo-link']//img[@class='logo loading']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57296/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'EC2AMAZ-C4MGU7T', ip: '172.28.16.1', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//a[@class='navbar-header__logo-link']//img[@class='logo loading']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57296/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+at stepdefs.HomePageStepDefinition.user_clicks_on_brand_logo(HomePageStepDefinition.java:344)
+at ✽.user clicks on brand logo(file:///C:/Users/Administrator/eclipse-workspace/TFGHobbs/src/test/resources/features/GuestCustomer_NoFilters_PayByCard_AUS.feature:84)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:58 GMT" name="tearDownClass" finished-at="2022-08-23T04:55:58 GMT" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:58 GMT" name="aftertest" finished-at="2022-08-23T04:55:58 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+        <test-method is-config="true" signature="aftersuite()[pri:0, instance:runner.RunTestNGTest@1807e3f6]" started-at="2022-08-23T04:55:58 GMT" name="aftersuite" finished-at="2022-08-23T04:56:04 GMT" duration-ms="6202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
+      </class> <!-- runner.RunTestNGTest -->
+    </test> <!-- Chrome Browser Execution -->
+  </suite> <!-- TFG Hobbs MVA Phase -->
+</testng-results>

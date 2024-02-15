@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="stepdefs.BasketStepDefinition">
+        <methods>
+          <include name="user_clicks_on_remove_link"/>
+          <include name="user_is_on_country_panel"/>
+          <include name="user_clicks_on_the_bag_icon_from_the_header"/>
+          <include name="user_is_on_basket_page_and_views_the_empty_basket"/>
+          <include name="user_selects_size_from_the_size_dropdown"/>
+          <include name="product_size_is_updated"/>
+          <include name="user_clicks_on_Apply_button"/>
+          <include name="user_clicks_on_check_out_securely_button"/>
+          <include name="product_is_removed_from_the_bag"/>
+          <include name="product_is_moved_to_wishlist"/>
+          <include name="coupon_cannot_be_added_to_your_cart_error_message_is_thrown"/>
+          <include name="user_selects_quantity_from_the_quantity_dropdown"/>
+          <include name="promocode_is_applied"/>
+          <include name="user_enters_promocode"/>
+          <include name="user_scrolldowns_from_the_basket_page_to_view_the_recommended_products"/>
+          <include name="user_views_the_recommended_products"/>
+          <include name="user_is_on_basket_page"/>
+          <include name="user_clicks_on_Move_to_Wishlist_link"/>
+          <include name="user_enters_invalid_promocode"/>
+          <include name="user_clicks_on_the_country_icon_from_the_header"/>
+          <include name="user_views_the_products_available_for_the_current_selected"/>
+          <include name="product_quantity_is_updated"/>
+        </methods>
+      </class> <!-- stepdefs.BasketStepDefinition -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

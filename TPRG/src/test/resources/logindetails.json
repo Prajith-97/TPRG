@@ -1,0 +1,15 @@
+{
+  "User_Name": "Testuser",
+  "Password": "Testpassword",
+  "Browser": "Chrome",
+  "Chrome": "false",
+  "Firefox": "false",
+  "Edge": "true",
+  "Emulation": "false",
+  "Device": "Galaxy S5",
+  "Headless": "false",
+  "UK_URL": "https://mcstag2.robertdyas.co.uk/",
+  "US_URL": "https://abc.abc.com/us/",
+  "AUS_URL": "https://abc.abc.com//au/",
+  "ROW_URL": "https://abc.abc.com"
+}
